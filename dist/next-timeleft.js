@@ -13,7 +13,7 @@
     var days = Math.floor(inTimestamp / ONE_DAY);
     var hours = parseInt(inTimestamp / ONE_MINUTE / 60 % 24 , 10);
     var minutes = parseInt(inTimestamp / ONE_MINUTE % 60, 10);
-    var seconds = parseInt(inTimestamp / 1000 % 60, 10);
+    var seconds = parseInt(inTimestamp / 1000 % 10, 10);
     var micros = parseInt(inTimestamp % 10,10);
     return {
       year: years,

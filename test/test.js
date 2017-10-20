@@ -56,4 +56,19 @@ describe('next/timeleft', function () {
   });
 
 
+  it('date nx.timeleft - 461542000',function(){
+    var secounds_test = 461542000;
+
+    var res = nx.timeleft( secounds_test );
+    assert.equal( res.year, 0);
+    assert.equal( res.month, 0);
+    assert.equal( res.week, 0);
+    assert.equal( res.day, 5);
+    assert.equal( res.hour, 8);
+    assert.equal( res.minute, 12);
+    assert.equal( res.second, 2);
+    assert.equal( res.micro, 0);
+  });
+
+
 });
