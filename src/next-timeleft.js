@@ -4,7 +4,6 @@
   var nx = global.nx || require('next-js-core2');
   var ONE_DAY = 1000 * 60 * 60 * 24;
   var ONE_MINUTE = 1000 * 60;
-  var DEFAULT_FORMAT = 'yyyy-mm-dd HH:MM:ss';
 
   nx.timeleft = function(inTimestamp){
     var years = Math.floor(inTimestamp / ONE_DAY / 365 );
